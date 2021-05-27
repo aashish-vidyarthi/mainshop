@@ -7,6 +7,7 @@ import {
   Link,
   Container,
   Box,
+  Button,
   Typography,
   CircularProgress,
   Badge,
@@ -24,7 +25,7 @@ import getCommerce from '../utils/commerce';
 export default function Layout({
   children,
   commercePublicKey,
-  title = 'Coolshop',
+  title = 'Mainshop',
 }) {
   const classes = useStyles();
   const { state, dispatch } = useContext(Store);
@@ -44,8 +45,8 @@ export default function Layout({
     <React.Fragment>
       <Head>
         <meta charSet="utf-8" />
-        <title>{`${title} - Coolshop`}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>{`${title} - Mainshop`}</title>
+        <link rel="icon" href="/favicon.png" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -63,15 +64,25 @@ export default function Layout({
             <NextLink href="/">
               <Link
                 variant="h6"
+                style={{ flexgrow: 1}}
                 color="inherit"
                 noWrap
                 href="/"
                 className={classes.toolbarTitle}
               >
-                Coolshop
+                Aashish B.Tech
               </Link>
             </NextLink>
             <nav>
+              <Button>
+                Electronics
+              </Button>
+              <Button>
+                Fashion
+              </Button>
+              <Button>
+                Home & Furniture
+              </Button>
               <NextLink href="/cart">
                 <Link
                   variant="button"

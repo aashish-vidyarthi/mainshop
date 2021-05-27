@@ -111,7 +111,7 @@ export default function Layout({
           <Box mt={5}>
             <Typography variant="body2" color="textSecondary" align="center">
               {'© '}
-              Coolshop 2021
+              Aashish B.tech 2021
               {'.'}
             </Typography>
           </Box>
